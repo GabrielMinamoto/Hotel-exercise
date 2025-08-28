@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-text:#ffffff;
+    --gradient-bg: linear-gradient(to top, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.541));
+    --span:span 2;
+}
+
+i{
+    font-size: 3rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 15rem;
+    gap: .6rem;
+}
+
+.box{
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg1{
+    background-image: var(--gradient-bg) ,url(../images/bg1.jpg);
+    
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.bg2{
+    background-image:var(--gradient-bg) ,url(../images/bg2.jpg);
+    background-position: 50% 30%;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.bg3{
+    background-image:var(--gradient-bg) , url(../images/bg3.jpg);
+    background-position: 50% 30%;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.bg4{
+    background-image:var(--gradient-bg) , url(../images/bg4.jpg);
+    background-position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.span-2{
+    grid-column: var(--span);
+    grid-row: var(--span);
+}
